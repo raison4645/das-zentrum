@@ -1,0 +1,12 @@
+.side-toggle-container:active {
+  
+}
+
+.side-toggle {
+  color: white;
+  font-size: 40px;
+}
+
+.sidebar-list {
+  color: red;
+}

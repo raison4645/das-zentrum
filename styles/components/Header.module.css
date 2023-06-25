@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+.nav {
+  background-color: #4d0000;
+  padding: 20px 0px 20px 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-title {
+  font-weight: bold;
+  font-size: 36px;
+  font-family: 'UnifrakturCook', cursive;
+  text-align: left;
+}
+
+.nav-right {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
+
+.login-btn {
+  width: 80px;
+  height: 40px;
+  font-size: 12px;
+  background-color: #4d0000;
+  border: solid 1px white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.login-btn:hover {
+  background-color: #fff;
+  color: #4d0000;
+}
+
+.side-toggle {
+  font-size: 30px;
+}
