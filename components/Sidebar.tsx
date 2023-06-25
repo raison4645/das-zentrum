@@ -49,7 +49,7 @@ export default function Sidebar () {
       <List
         style={{color: "grey"}}
       >
-        {['GERMAN', 'MUSIC', 'PHILOSOPHY', 'RESUME', 'LIFE'].map((text) => (
+        {['GERMAN', 'MUSIC', 'PHILOSOPHY', 'RESUME', 'BIOGRAPHY'].map((text) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon />
@@ -58,7 +58,7 @@ export default function Sidebar () {
           </ListItem>
         ))}
       </List>
-      <List>
+      {/* <List>
         {['All mail', 'Trash', 'Spam'].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
@@ -69,7 +69,7 @@ export default function Sidebar () {
             </ListItemButton>
           </ListItem>
         ))}
-      </List>
+      </List> */}
     </Box>
   );
 

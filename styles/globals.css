@@ -27,6 +27,10 @@ a {
 }
 
 .css-1160xiw-MuiPaper-root-MuiDrawer-paper {
-  top: 88px;
-  width: 300px;
+  top: 92px;
+  width: 350px;
+}
+
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  padding: 0;
 }

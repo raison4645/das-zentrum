@@ -2,11 +2,22 @@
 
 .nav {
   background-color: #4d0000;
-  padding: 20px 0px 20px 20px;
+  /* padding: 20px 0px 20px 20px; */
   width: 100%;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  display: flex;
+  justify-content: center;
+}
+
+.navItems {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1440px;
+  width: 100%;
+  padding: 20px 20px;
 }
 
 .logo-title {
@@ -16,10 +27,20 @@
   text-align: left;
 }
 
+@media screen and (max-width: 375px) {
+  .logo-title {
+    font-size: 30px;
+  }
+  .navItems {
+    padding: 20px 10px;
+  }
+}
+
 .nav-right {
   display: flex;  
   justify-content: center;
   align-items: center;
+  gap: 1px;
 }
 
 .login-btn {
