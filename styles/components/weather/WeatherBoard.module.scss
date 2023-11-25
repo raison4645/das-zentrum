@@ -1,0 +1,32 @@
+.curr_container {
+  display: flex;
+  flex-direction: column;
+  width: 512px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
+  .curr_weather {
+    h3 {
+      text-align: center;
+      margin: 0;
+    }
+    .curr_details {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      div {
+        width: 150px;
+        h4 {
+          margin: 0;
+        }
+        height: 80px;
+      }
+    }
+  }
+}
+
+.curr_hourly {
+  display: flex;
+  gap: 10px;
+}

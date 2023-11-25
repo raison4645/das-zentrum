@@ -1,4 +1,4 @@
-import styles from '../../styles/components/weather/WeatherBoard.module.css'
+import styles from '../../styles/components/weather/WeatherBoard.module.scss'
 import WeatherCard from './WeatherCard'
 import WeatherBar from './WeatherBar'
 
@@ -6,15 +6,28 @@ export default function WeatherBoard() {
   return (
     <div className={styles.board_Container}>
       board
-      <span className={styles.currentDate}></span>
-      <div className={styles.weather_now}></div>
+      <span className={styles.currDate}>11/10/2023</span>
+      <div className={styles.curr_container}>
+        <div className={styles.curr_weather}>
+          <h3>Current Weather</h3>
+          <div className={styles.curr_details}>
+            <div>
+              <h4>City</h4>
+              <span>TODAY 11 OCT</span>
+            </div>
+            <div>
+              <h4>7°C</h4>
+              <span>Cloudy</span>
+            </div>
+            <div>PNG</div>
+          </div>
+        </div>
 
-      <div className={styles.current_container}>
-        <div className={styles.current_weather}></div>
+        <div className={styles.curr_condition}>
+          
+        </div>
 
-        <div className={styles.current_air}></div>
-
-        <div className={styles.current_hourly}>
+        <div className={styles.curr_hourly}>
           <WeatherCard />
           <WeatherCard />
           <WeatherCard />

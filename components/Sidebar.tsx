@@ -4,13 +4,10 @@ import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
 import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import styles from '../styles/components/Sidebar.module.css'
@@ -45,12 +42,11 @@ export default function Sidebar () {
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
+      className={styles['sidebar']}
     >
-      <List
-        style={{color: "grey"}}
-      >
+      <List>
         {['GERMAN', 'MUSIC', 'PHILOSOPHY', 'RESUME', 'BIOGRAPHY'].map((text) => (
-          <ListItem key={text} disablePadding>
+          <ListItem key={text} disablePadding className={styles['sidebar-item']}>
             <ListItemButton>
               <ListItemIcon />
               <ListItemText primary={text} />
@@ -76,7 +72,7 @@ export default function Sidebar () {
   return (
     <div>
       {(['right'] as const).map((anchor) => (
-        <React.Fragment key={anchor}>
+        <React.Fragment key={anchor} >
           <Button 
             onClick={toggleDrawer(anchor, true)}
             className={styles['side-toggle-container']}

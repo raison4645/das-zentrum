@@ -3,10 +3,16 @@
 }
 
 .side-toggle {
-  color: white;
+  color: #fff;
   font-size: 40px;
 }
 
-.sidebar-list {
-  color: red;
+.sidebar-item {
+  
+}
+
+.sidebar {
+  height: 100%;
+
+  padding: 0;
 }
